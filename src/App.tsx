@@ -1,11 +1,16 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
 import "./App.css";
+import { Heading } from "./components/Heading";
+import { Oscar } from "./components/Oscar";
+import { Greet } from "./components/Greet";
 
 function App() {
   return (
     <div className="App">
-      <h1>Vite TS</h1>
+      <Heading>Placeholder text</Heading>
+      <Oscar>
+        <Heading>Oscar goes to Leonardo Dicpario!</Heading>
+      </Oscar>
+      <Greet name="Viswas" isLoggedIn={false} />
     </div>
   );
 }
